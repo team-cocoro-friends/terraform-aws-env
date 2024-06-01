@@ -37,7 +37,7 @@ resource "aws_ecs_task_definition" "ecs_task" {
   container_definitions = jsonencode([
     {
       name      = "my-app"
-      image     = "nginx:latest"
+      image     = "973112399482.dkr.ecr.ap-northeast-1.amazonaws.com/my-ecr-repo:latest"
       essential = true
       portMappings = [
         {
